@@ -1,0 +1,25 @@
+@model TodoModelView
+
+@{
+
+}
+
+
+<form asp-action="AddTodo" method="POST">
+    
+    <div class="form-group">
+        <input type="text" class="form-control" asp-for="ThingToDo1" />
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" asp-for="ThingToDo2" />
+    </div>
+    
+    <div class="form-group">
+        <input type="text" class="form-control" asp-for="ThingToDo3" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary">Cancel</a>
+
+</form>
